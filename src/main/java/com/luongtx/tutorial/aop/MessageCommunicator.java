@@ -4,7 +4,7 @@ package com.luongtx.tutorial.aop;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MessageCommunicator {
+public class MessageCommunicator implements Deliverable {
     public void deliver(String message) {
         System.out.println(message);
     }
