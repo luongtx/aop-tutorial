@@ -12,7 +12,7 @@ public class AopTutorialApplication {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(AopTutorialApplication.class, args);
         MessageCommunicator messageCommunicator = context.getBean(MessageCommunicator.class);
-        messageCommunicator.deliver("wanna learn aspectj");
-        messageCommunicator.deliver("Harry", "having fun");
+        messageCommunicator.deliver("Hello World!");
+        messageCommunicator.deliver("Luong", "having fun!");
     }
 }
